@@ -47,7 +47,9 @@ struct ItemView: View {
         }
         .padding()
         .onAppear {
-            sort()
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                sort()
+            }
         }
     }
     
