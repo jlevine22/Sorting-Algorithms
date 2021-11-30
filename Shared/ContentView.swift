@@ -9,8 +9,35 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
+        NavigationView {
+            ScrollView {
+                VStack {
+                    AlgorithmLink(title: "Bubble Sort", destination: BubbleSortView())
+                    AlgorithmLink(title: "Insertion Sort", destination: InsertionSortView())
+                    AlgorithmLink(title: "Selection Sort", destination: SelectionSortView())
+                    AlgorithmLink(title: "Quick Sort", destination: QuickSortView())
+                }
+                .padding()
+            }
+            .navigationTitle("Sorting Algorithms")
+        }
+    }
+}
+
+struct AlgorithmLink<Content: View>: View {
+    var title: String
+    var destination: Content
+    
+    var body: some View {
+        NavigationLink(destination: destination) {
+            HStack {
+                Text(title).font(.title)
+                Spacer()
+            }
             .padding()
+            .background(.regularMaterial)
+            .cornerRadius(8)
+        }
     }
 }
 

@@ -13,6 +13,18 @@
 		33D004282755FF4C007EC597 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D004162755FF4C007EC597 /* ContentView.swift */; };
 		33D004292755FF4C007EC597 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33D004172755FF4C007EC597 /* Assets.xcassets */; };
 		33D0042A2755FF4C007EC597 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33D004172755FF4C007EC597 /* Assets.xcassets */; };
+		33D0043427561369007EC597 /* BubbleSortView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D0043327561369007EC597 /* BubbleSortView.swift */; };
+		33D0043527561369007EC597 /* BubbleSortView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D0043327561369007EC597 /* BubbleSortView.swift */; };
+		33D00437275618C0007EC597 /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D00436275618C0007EC597 /* ItemView.swift */; };
+		33D00438275618C0007EC597 /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D00436275618C0007EC597 /* ItemView.swift */; };
+		33D0043A2756199C007EC597 /* InsertionSortView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D004392756199C007EC597 /* InsertionSortView.swift */; };
+		33D0043B2756199C007EC597 /* InsertionSortView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D004392756199C007EC597 /* InsertionSortView.swift */; };
+		33D0044027562356007EC597 /* SelectionSortView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D0043F27562356007EC597 /* SelectionSortView.swift */; };
+		33D0044127562356007EC597 /* SelectionSortView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D0043F27562356007EC597 /* SelectionSortView.swift */; };
+		33D0044327562621007EC597 /* QuickSortView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D0044227562621007EC597 /* QuickSortView.swift */; };
+		33D0044427562621007EC597 /* QuickSortView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D0044227562621007EC597 /* QuickSortView.swift */; };
+		33D004462756277F007EC597 /* Task+Sleep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D004452756277F007EC597 /* Task+Sleep.swift */; };
+		33D004472756277F007EC597 /* Task+Sleep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D004452756277F007EC597 /* Task+Sleep.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +34,12 @@
 		33D0041C2755FF4C007EC597 /* Sorting Algorithms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sorting Algorithms.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		33D004222755FF4C007EC597 /* Sorting Algorithms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sorting Algorithms.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		33D004242755FF4C007EC597 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		33D0043327561369007EC597 /* BubbleSortView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleSortView.swift; sourceTree = "<group>"; };
+		33D00436275618C0007EC597 /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
+		33D004392756199C007EC597 /* InsertionSortView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertionSortView.swift; sourceTree = "<group>"; };
+		33D0043F27562356007EC597 /* SelectionSortView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionSortView.swift; sourceTree = "<group>"; };
+		33D0044227562621007EC597 /* QuickSortView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSortView.swift; sourceTree = "<group>"; };
+		33D004452756277F007EC597 /* Task+Sleep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+Sleep.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,9 +72,15 @@
 		33D004142755FF4C007EC597 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				33D004152755FF4C007EC597 /* Sorting_AlgorithmsApp.swift */,
-				33D004162755FF4C007EC597 /* ContentView.swift */,
 				33D004172755FF4C007EC597 /* Assets.xcassets */,
+				33D0043327561369007EC597 /* BubbleSortView.swift */,
+				33D004162755FF4C007EC597 /* ContentView.swift */,
+				33D004392756199C007EC597 /* InsertionSortView.swift */,
+				33D00436275618C0007EC597 /* ItemView.swift */,
+				33D0044227562621007EC597 /* QuickSortView.swift */,
+				33D0043F27562356007EC597 /* SelectionSortView.swift */,
+				33D004152755FF4C007EC597 /* Sorting_AlgorithmsApp.swift */,
+				33D004452756277F007EC597 /* Task+Sleep.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -176,8 +200,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33D0043427561369007EC597 /* BubbleSortView.swift in Sources */,
+				33D0044027562356007EC597 /* SelectionSortView.swift in Sources */,
 				33D004272755FF4C007EC597 /* ContentView.swift in Sources */,
 				33D004252755FF4C007EC597 /* Sorting_AlgorithmsApp.swift in Sources */,
+				33D0043A2756199C007EC597 /* InsertionSortView.swift in Sources */,
+				33D004462756277F007EC597 /* Task+Sleep.swift in Sources */,
+				33D00437275618C0007EC597 /* ItemView.swift in Sources */,
+				33D0044327562621007EC597 /* QuickSortView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,8 +215,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33D0043527561369007EC597 /* BubbleSortView.swift in Sources */,
+				33D0044127562356007EC597 /* SelectionSortView.swift in Sources */,
 				33D004282755FF4C007EC597 /* ContentView.swift in Sources */,
 				33D004262755FF4C007EC597 /* Sorting_AlgorithmsApp.swift in Sources */,
+				33D0043B2756199C007EC597 /* InsertionSortView.swift in Sources */,
+				33D004472756277F007EC597 /* Task+Sleep.swift in Sources */,
+				33D00438275618C0007EC597 /* ItemView.swift in Sources */,
+				33D0044427562621007EC597 /* QuickSortView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
