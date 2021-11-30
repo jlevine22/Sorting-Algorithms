@@ -25,6 +25,8 @@
 		33D0044427562621007EC597 /* QuickSortView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D0044227562621007EC597 /* QuickSortView.swift */; };
 		33D004462756277F007EC597 /* Task+Sleep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D004452756277F007EC597 /* Task+Sleep.swift */; };
 		33D004472756277F007EC597 /* Task+Sleep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D004452756277F007EC597 /* Task+Sleep.swift */; };
+		33D00449275690FA007EC597 /* MergeSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D00448275690FA007EC597 /* MergeSort.swift */; };
+		33D0044A275690FA007EC597 /* MergeSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D00448275690FA007EC597 /* MergeSort.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,7 @@
 		33D0043F27562356007EC597 /* SelectionSortView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionSortView.swift; sourceTree = "<group>"; };
 		33D0044227562621007EC597 /* QuickSortView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSortView.swift; sourceTree = "<group>"; };
 		33D004452756277F007EC597 /* Task+Sleep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+Sleep.swift"; sourceTree = "<group>"; };
+		33D00448275690FA007EC597 /* MergeSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeSort.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +80,7 @@
 				33D004162755FF4C007EC597 /* ContentView.swift */,
 				33D004392756199C007EC597 /* InsertionSortView.swift */,
 				33D00436275618C0007EC597 /* ItemView.swift */,
+				33D00448275690FA007EC597 /* MergeSort.swift */,
 				33D0044227562621007EC597 /* QuickSortView.swift */,
 				33D0043F27562356007EC597 /* SelectionSortView.swift */,
 				33D004152755FF4C007EC597 /* Sorting_AlgorithmsApp.swift */,
@@ -206,6 +210,7 @@
 				33D004252755FF4C007EC597 /* Sorting_AlgorithmsApp.swift in Sources */,
 				33D0043A2756199C007EC597 /* InsertionSortView.swift in Sources */,
 				33D004462756277F007EC597 /* Task+Sleep.swift in Sources */,
+				33D00449275690FA007EC597 /* MergeSort.swift in Sources */,
 				33D00437275618C0007EC597 /* ItemView.swift in Sources */,
 				33D0044327562621007EC597 /* QuickSortView.swift in Sources */,
 			);
@@ -221,6 +226,7 @@
 				33D004262755FF4C007EC597 /* Sorting_AlgorithmsApp.swift in Sources */,
 				33D0043B2756199C007EC597 /* InsertionSortView.swift in Sources */,
 				33D004472756277F007EC597 /* Task+Sleep.swift in Sources */,
+				33D0044A275690FA007EC597 /* MergeSort.swift in Sources */,
 				33D00438275618C0007EC597 /* ItemView.swift in Sources */,
 				33D0044427562621007EC597 /* QuickSortView.swift in Sources */,
 			);
