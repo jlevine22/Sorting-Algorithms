@@ -13,9 +13,6 @@ struct InsertionSortView: View {
     @State var isSorting: Bool = false
     @State var isSorted: Bool = false
     
-    @State var primaryHighlight: Int?
-    @State var secondaryHighlight: Int?
-    
     var body: some View {
         ItemView(items: $items, isSorting: $isSorting, isSorted: $isSorted) {
             sort()
@@ -28,12 +25,17 @@ struct InsertionSortView: View {
         Task {
             for i in 0..<items.count {
                 for j in 0...i {
-                    if items[i] < items[j] {
+                    if items[i - j] < items[i] {
                         withAnimation {
-                            items.move(fromOffsets: .init(integer: i), toOffset: j)
+                            items.move(fromOffsets: .init(integer: i), toOffset: i - j + 1)
                         }
                         try? await Task.sleep(seconds: 0.5)
-                        break;
+                        break
+                    } else if j == i {
+                        withAnimation {
+                            items.move(fromOffsets: .init(integer: i), toOffset: 0)
+                        }
+                        try? await Task.sleep(seconds: 0.5)
                     }
                 }
             }
