@@ -25,14 +25,15 @@ struct BubbleSortView: View {
             for i in 0..<items.count {
                 for j in 0..<items.count - i - 1 {
                     if items[j+1] < items[j] {
-                        withAnimation {
+                        withAnimation(.standard) {
                             items.swapAt(j, j+1)
                         }
-                        try? await Task.sleep(seconds: 0.5)
                     }
+                    try? await Task.defaultPause()
                 }
+                try? await Task.defaultPause()
             }
-            withAnimation {
+            withAnimation(.standard) {
                 isSorted = true
                 isSorting = false
             }

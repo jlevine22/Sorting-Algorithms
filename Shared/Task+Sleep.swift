@@ -12,4 +12,8 @@ extension Task where Success == Never, Failure == Never {
         let duration = UInt64(seconds * 1_000_000_000)
         try await Task.sleep(nanoseconds: duration)
     }
+    
+    static func defaultPause() async throws {
+        try await sleep(seconds: 0.1)
+    }
 }

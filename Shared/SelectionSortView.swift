@@ -29,13 +29,14 @@ struct SelectionSortView: View {
                     if items[j] < items[minIndex] {
                         minIndex = j
                     }
+                    try? await Task.defaultPause()
                 }
                 if minIndex != i {
-                    withAnimation {
+                    withAnimation(.standard) {
                         items.swapAt(i, minIndex)
                     }
-                    try? await Task.sleep(seconds: 0.5)
                 }
+                try? await Task.defaultPause()
             }
             withAnimation {
                 isSorted = true

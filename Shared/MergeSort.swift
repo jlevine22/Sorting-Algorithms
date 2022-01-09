@@ -25,7 +25,7 @@ struct MergeSort: View {
         Task {
             await mergeSort(range: 0..<items.count)
             
-            withAnimation {
+            withAnimation(.standard) {
                 isSorted = true
                 isSorting = false
             }
@@ -46,37 +46,37 @@ struct MergeSort: View {
                 i += 1
             } else {
                 if j != start {
-                    withAnimation {
+                    withAnimation(.standard) {
                         items.move(fromOffsets: .init(integer: j), toOffset: start)
                     }
-                    try? await Task.sleep(seconds: 0.5)
                 }
                 leftEnd += 1
                 i += 1
                 j += 1
             }
             start += 1
+            try? await Task.defaultPause()
         }
         
         while i < leftEnd {
             if i != start {
-                withAnimation {
+                withAnimation(.standard) {
                     items.move(fromOffsets: .init(integer: i), toOffset: start)
                 }
-                try? await Task.sleep(seconds: 0.5)
             }
             i += 1
             start += 1
+            try? await Task.defaultPause()
         }
         while j < rightEnd {
             if j != start {
-                withAnimation {
+                withAnimation(.standard) {
                     items.move(fromOffsets: .init(integer: j), toOffset: start)
                 }
-                try? await Task.sleep(seconds: 0.5)
             }
             j += 1
             start += 1
+            try? await Task.defaultPause()
         }
     }
     

@@ -40,17 +40,17 @@ struct QuickSortView: View {
             if items[i] < pivot {
                 swapIndex += 1
                 if i != swapIndex {
-                    withAnimation {
+                    withAnimation(.standard) {
                         items.swapAt(i, swapIndex)
                     }
-                    try? await Task.sleep(seconds: 0.5)
                 }
             }
+            try? await Task.defaultPause()
         }
-        withAnimation {
+        withAnimation(.standard) {
             items.swapAt(swapIndex, start)
         }
-        try? await Task.sleep(seconds: 0.5)
+        try? await Task.defaultPause()
         return swapIndex
     }
     

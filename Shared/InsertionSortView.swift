@@ -26,20 +26,21 @@ struct InsertionSortView: View {
             for i in 0..<items.count {
                 for j in 0...i {
                     if items[i - j] < items[i] {
-                        withAnimation {
+                        withAnimation(.standard) {
                             items.move(fromOffsets: .init(integer: i), toOffset: i - j + 1)
                         }
-                        try? await Task.sleep(seconds: 0.5)
+                        try? await Task.defaultPause()
                         break
                     } else if j == i {
-                        withAnimation {
+                        withAnimation(.standard) {
                             items.move(fromOffsets: .init(integer: i), toOffset: 0)
                         }
-                        try? await Task.sleep(seconds: 0.5)
                     }
+                    try? await Task.defaultPause()
                 }
+                try? await Task.defaultPause()
             }
-            withAnimation {
+            withAnimation(.standard) {
                 isSorted = true
                 isSorting = false
             }
