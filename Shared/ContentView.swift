@@ -17,6 +17,7 @@ struct ContentView: View {
                     AlgorithmLink(title: "Selection Sort", destination: SelectionSortView())
                     AlgorithmLink(title: "Quick Sort", destination: QuickSortView())
                     AlgorithmLink(title: "Merge Sort", destination: MergeSort())
+                    AlgorithmLink(title: "Radix Sort", destination: RadixSortView())
                 }
                 .padding()
             }
